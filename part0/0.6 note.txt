@@ -1,0 +1,21 @@
+note on single page spa
+
+note over browser:
+user clicks submit button
+prevent default form behavior
+add note to local nodes list
+redrawnotes() to display in list
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/note_spa
+
+note over server:
+add note to database/global list
+send message to client
+end note
+
+server-->browser: {"message":"note created"}, response code 201
+
+note over browser:
+console log response
+end note
